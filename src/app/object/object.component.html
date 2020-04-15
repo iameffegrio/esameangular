@@ -1,0 +1,6 @@
+<div class="object">
+    <p>{{todo.label}}</p>
+    <p>{{todo.priority}}</p>
+    <p class="tick" *ngIf="gone === true" (click)="tickIt()">&#10003;</p>
+    <p class="tick" *ngIf="gone === false" (click)="tickIt()">&#10005;</p>
+</div>
